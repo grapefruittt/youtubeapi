@@ -6,9 +6,24 @@ import Component2 from './Component2';
 import Component3 from './Component3';
 import './App.css';
 
+
+
 function App() {
 
+  
 
+  const dbtest = async()=>{
+    const res = await axios.get('/api/test');
+    console.log(res.data);
+    console.log("aaa");
+  }
+  
+  useEffect(()=>{
+    dbtest();
+  },[]);
+  
+  
+  
   
   return (
     
