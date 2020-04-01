@@ -13,9 +13,10 @@ function App() {
   
 
   const dbtest = async()=>{
+    console.log("aaa");
     const res = await axios.get('/api/test');
     console.log(res.data);
-    console.log("aaa");
+   
   }
   
   useEffect(()=>{
